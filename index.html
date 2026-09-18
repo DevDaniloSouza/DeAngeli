@@ -1,17 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeAngeli | Fotografias</title>
-    <link rel="stylesheet" href="style/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeAngeli | Fotografia</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav></nav>
-        <h1></h1>
-    </header>
-    <main></main>
-    <footer></footer>
+
+  <nav class="navbar">
+    <a href="#" class="logo">DeAngeli<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="subtitle">Fotografia & Almapaisa</span>
+      <h1>Luz, afeto e a poesia do cotidiano brasileiro.</h1>
+      <a href="#galeria" class="btn">Ver Portfólio</a>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery-container">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="retratos">Retratos</button>
+      <button class="filter-btn" data-filter="paisagens">Paisagens</button>
+      <button class="filter-btn" data-filter="cotidiano">Cotidiano</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item retratos" data-src="https://picsum.photos/id/64/1200/800">
+        <img src="https://picsum.photos/id/64/600/800" alt="Retrato 1">
+        <div class="overlay"><span>Retratos</span></div>
+      </div>
+      <div class="gallery-item paisagens" data-src="https://picsum.photos/id/58/1200/800">
+        <img src="https://picsum.photos/id/58/600/600" alt="Paisagem 1">
+        <div class="overlay"><span>Paisagens</span></div>
+      </div>
+      <div class="gallery-item cotidiano" data-src="https://picsum.photos/id/77/1200/800">
+        <img src="https://picsum.photos/id/77/600/700" alt="Cotidiano 1">
+        <div class="overlay"><span>Cotidiano</span></div>
+      </div>
+      <div class="gallery-item retratos" data-src="https://picsum.photos/id/91/1200/800">
+        <img src="https://picsum.photos/id/91/600/600" alt="Retrato 2">
+        <div class="overlay"><span>Retratos</span></div>
+      </div>
+      <div class="gallery-item paisagens" data-src="https://picsum.photos/id/106/1200/800">
+        <img src="https://picsum.photos/id/106/600/800" alt="Paisagem 2">
+        <div class="overlay"><span>Paisagens</span></div>
+      </div>
+      <div class="gallery-item cotidiano" data-src="https://picsum.photos/id/129/1200/800">
+        <img src="https://picsum.photos/id/129/600/700" alt="Cotidiano 2">
+        <div class="overlay"><span>Cotidiano</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about-section">
+    <div class="about-image">
+      <img src="https://picsum.photos/id/338/600/800" alt="DeAngeli em ação">
+    </div>
+    <div class="about-text">
+      <h2>O Olhar DeAngeli</h2>
+      <p>Capturar a essência brasileira vai além de registrar paisagens belas; é sobre captar o calor das relações, a luz dourada do fim de tarde e a espontaneidade que só o nosso povo tem.</p>
+      <p>Com anos de estrada, o estúdio DeAngeli busca transformar instantes efêmeros em memórias atemporais, equilibrando técnica refinada e sensibilidade bruta.</p>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <img class="lightbox-img" src="" alt="Imagem Ampliada">
+  </div>
+
+  <footer id="contato">
+    <h2>Vamos criar algo juntos?</h2>
+    <p>Disponível para projetos em todo o Brasil e no exterior.</p>
+    <a href="mailto:contato@deangeli.com" class="contact-email">contato@deangeli.com</a>
+    <div class="footer-bottom">
+      <p>&copy; 2026 DeAngeli Fotografia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
